@@ -1,18 +1,10 @@
 {
+  "extends": "./.wxt/tsconfig.json",
   "compilerOptions": {
     "strict": true,
-    "target": "esnext",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "lib": [
-      "dom",
-      "esnext"
-    ],
     "allowJs": false,
     "noImplicitAny": true,
     "removeComments": true,
-    "skipLibCheck": true,
     "sourceMap": true
   }
 }

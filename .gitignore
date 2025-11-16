@@ -292,6 +292,8 @@ $RECYCLE.BIN/
 # Custom
 # ==================================================
 .idea
+.wxt/
+.output/
 dist/
 packages/
 storage/

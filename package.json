@@ -3,14 +3,23 @@
   "name": "github-codewiki",
   "description": "Add a button to quickly access Code Wiki from GitHub repositories",
   "scripts": {
-    "dev": "webextension-toolbox dev",
-    "build": "webextension-toolbox build",
-    "build-all": "npm run build chrome && npm run build firefox && npm run build edge",
+    "dev": "wxt",
+    "dev:firefox": "wxt --browser firefox",
+    "build": "wxt build",
+    "build:chrome": "wxt build --browser chrome",
+    "build:firefox": "wxt build --browser firefox",
+    "build:edge": "wxt build --browser edge",
+    "build-all": "npm run build:chrome && npm run build:firefox && npm run build:edge",
+    "zip": "wxt zip",
+    "zip:chrome": "wxt zip --browser chrome",
+    "zip:firefox": "wxt zip --browser firefox",
+    "zip:edge": "wxt zip --browser edge",
+    "postinstall": "wxt prepare",
     "generate-icons": "tsx scripts/generate-icons.ts",
     "lint": "npm run lint-biome && npm run lint-tsc && npm run lint-secretlint",
     "lint-biome": "biome check --write",
     "lint-tsc": "tsc --noEmit",
-    "lint-secretlint": "secretlint \"**/*\" --secretlintignore .gitignore",
+    "lint-secretlint": "secretlint \"**/*\" --secretlintrc secretlintrc.json --secretlintignore .gitignore",
     "archive": "git archive HEAD -o storage/source.zip"
   },
   "keywords": [
@@ -35,11 +44,12 @@
     "@types/chrome": "^0.0.323",
     "@types/node": "^22.10.2",
     "@types/webextension-polyfill": "^0.10.7",
-    "@webextension-toolbox/webextension-toolbox": "^7.1.1",
+    "@wxt-dev/i18n": "^0.2.4",
     "secretlint": "^9.3.1",
     "sharp": "^0.34.1",
     "tsx": "^4.19.2",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "wxt": "^0.20.11"
   },
   "browserslist": [
     "last 2 versions, not dead, > 0.2%"
