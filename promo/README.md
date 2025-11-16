@@ -24,7 +24,3 @@ You can use tools like:
 - Figma / Sketch / Adobe XD for design
 - Screenshots from actual browser usage
 - Image editing tools (Photoshop, GIMP, etc.)
-
-## Reference
-
-See the [github-deepwiki promo directory](https://github.com/yamadashy/github-deepwiki/tree/main/promo) for examples.
