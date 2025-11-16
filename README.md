@@ -14,7 +14,8 @@
 
 ### Install
 
-- [Chrome Web Store](https://chromewebstore.google.com/detail/github-code-wiki-button-u/eamgaijkcackfmgpnddepjindfhmobnl)
+- Chrome: [Chrome Web Store](https://chromewebstore.google.com/detail/github-code-wiki-button-u/eamgaijkcackfmgpnddepjindfhmobnl)
+- Firefox: [Firefox Add-ons](https://addons.mozilla.org/ja/firefox/addon/github-code-wiki-unofficial/)
 
 ### What is Code Wiki?
 
