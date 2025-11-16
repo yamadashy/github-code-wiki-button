@@ -6,7 +6,7 @@ export default defineConfig({
     version: '1.0.0',
     description: '__MSG_appDescription__',
     default_locale: 'en',
-    permissions: ['scripting'],
+    permissions: ['scripting', 'tabs'],
     host_permissions: ['https://github.com/*'],
     icons: {
       16: '/images/icon-16.png',
