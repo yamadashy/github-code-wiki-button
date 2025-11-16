@@ -8,11 +8,13 @@
 
 ![](./promo/Screenshot_1280x800.png)
 
+[![Chrome Web Store Users](https://img.shields.io/chrome-web-store/users/eamgaijkcackfmgpnddepjindfhmobnl?label=Chrome%20Web%20Store%20Users&logo=googlechrome)](https://chromewebstore.google.com/detail/github-code-wiki-button-u/eamgaijkcackfmgpnddepjindfhmobnl)
+
 ## 🚀 Get Started
 
 ### Install
 
-> **Note**: This extension is not yet published to browser stores. You can install it manually by following the development instructions below.
+- [Chrome Web Store](https://chromewebstore.google.com/detail/github-code-wiki-button-u/eamgaijkcackfmgpnddepjindfhmobnl)
 
 ### What is Code Wiki?
 
