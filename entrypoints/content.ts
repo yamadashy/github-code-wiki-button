@@ -5,27 +5,43 @@ export default defineContentScript({
 
   main() {
     // Inject CSS
-    const style = document.createElement('style');
-    style.textContent = `
-      .codewiki-button.btn-sm.btn.BtnGroup-item {
-        text-decoration: none;
-        display: inline-flex;
-        align-items: center;
-        padding: 3px 12px;
-        gap: 8px;
-      }
+    const injectCSS = () => {
+      const style = document.createElement('style');
+      style.textContent = `
+        .codewiki-button.btn-sm.btn.BtnGroup-item {
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+          padding: 3px 12px;
+          gap: 8px;
+        }
 
-      .codewiki-button .octicon {
-        display: inline-flex;
-        align-items: center;
-      }
+        .codewiki-button .octicon {
+          display: inline-flex;
+          align-items: center;
+        }
 
-      .codewiki-button .octicon img {
-        display: block;
-        vertical-align: text-bottom;
-      }
-    `;
-    document.head.appendChild(style);
+        .codewiki-button .octicon img {
+          display: block;
+          vertical-align: text-bottom;
+        }
+      `;
+      document.head.appendChild(style);
+    };
+
+    // Inject CSS when document.head is available
+    if (document.head) {
+      injectCSS();
+    } else {
+      // Wait for document.head to be available
+      const observer = new MutationObserver(() => {
+        if (document.head) {
+          observer.disconnect();
+          injectCSS();
+        }
+      });
+      observer.observe(document.documentElement, { childList: true });
+    }
 
     // Function to add Code Wiki button
     function addCodeWikiButton(): void {
