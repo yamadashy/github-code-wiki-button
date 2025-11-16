@@ -43,8 +43,8 @@ export default defineBackground(() => {
     }
   };
 
-  // Update extension content for tabs
-  chrome.tabs.query({}, async (tabs: chrome.tabs.Tab[]) => {
+  // Inject content scripts to existing GitHub tabs when extension is installed/updated
+  chrome.tabs.query({ url: 'https://github.com/*' }, async (tabs: chrome.tabs.Tab[]) => {
     for (const tab of tabs) {
       try {
         await injectContentToTab(tab);
