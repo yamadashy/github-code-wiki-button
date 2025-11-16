@@ -61,7 +61,10 @@
   "__firefox__browser_specific_settings": {
     "gecko": {
       "id": "{8c3f4a7d-9e2b-4f1c-a5d6-7b8e9f0a1c2d}",
-      "strict_min_version": "102.0"
+      "strict_min_version": "102.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   }
 }
