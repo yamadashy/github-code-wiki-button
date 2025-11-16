@@ -1,0 +1,26 @@
+Deze browserextensie voegt een handige "Code Wiki"-knop toe aan GitHub repository-pagina's, waarmee je snel toegang krijgt tot de documentatie van de repository op Code Wiki van Google.
+
+🛠️ Functies:
+- Naadloze integratie met de GitHub-interface
+- Één-klik toegang tot Code Wiki voor elke GitHub repository
+- Strak en minimalistisch ontwerp volgens GitHub UI-patronen
+- Werkt op alle GitHub repository-pagina's
+
+🚀 Gebruik:
+1. Installeer de extensie
+2. Navigeer naar een GitHub repository
+3. Klik op de "Code Wiki"-knop in de repository header
+4. Je wordt doorgestuurd naar de bijbehorende Code Wiki-pagina
+
+⚠️ Opmerking:
+Dit is een niet-officiële extensie en is niet gelieerd aan GitHub of Google. Het biedt simpelweg een handige manier om te navigeren tussen GitHub repositories en hun bijbehorende Code Wiki-pagina's.
+
+🔒 Privacy:
+- Geen gegevensverzameling
+- Geen tracking
+- Geen authenticatie vereist
+- Heeft alleen toegang nodig tot github.com om de knop toe te voegen
+
+💻 De broncode is ook beschikbaar en je kunt deze zelf bouwen en installeren.
+Voor meer informatie, bezoek:
+https://github.com/yamadashy/github-code-wiki-button

@@ -1,0 +1,26 @@
+Esta extensão do navegador adiciona um conveniente botão "Code Wiki" às páginas de repositórios do GitHub, permitindo que você acesse rapidamente a documentação do repositório no Code Wiki do Google.
+
+🛠️ Recursos:
+- Integração perfeita com a interface do GitHub
+- Acesso com um clique ao Code Wiki para qualquer repositório do GitHub
+- Design limpo e minimalista seguindo os padrões de interface do GitHub
+- Funciona em todas as páginas de repositórios do GitHub
+
+🚀 Como usar:
+1. Instale a extensão
+2. Navegue até qualquer repositório do GitHub
+3. Clique no botão "Code Wiki" no cabeçalho do repositório
+4. Você será redirecionado para a página correspondente do Code Wiki
+
+⚠️ Nota:
+Esta é uma extensão não oficial e não está afiliada ao GitHub ou Google. Ela simplesmente fornece uma maneira conveniente de navegar entre repositórios do GitHub e suas páginas correspondentes no Code Wiki.
+
+🔒 Privacidade:
+- Sem coleta de dados
+- Sem rastreamento
+- Sem necessidade de autenticação
+- Requer apenas acesso ao github.com para adicionar o botão
+
+💻 O código-fonte também está disponível, e você pode compilá-lo e instalá-lo por conta própria.
+Para mais detalhes, visite:
+https://github.com/yamadashy/github-code-wiki-button

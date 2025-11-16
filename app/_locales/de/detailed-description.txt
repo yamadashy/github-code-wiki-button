@@ -1,0 +1,26 @@
+Diese Browser-Erweiterung fügt GitHub-Repository-Seiten eine praktische "Code Wiki"-Schaltfläche hinzu, mit der Sie schnell auf die Dokumentation des Repositories in Googles Code Wiki zugreifen können.
+
+🛠️ Funktionen:
+- Nahtlose Integration in die GitHub-Oberfläche
+- Ein-Klick-Zugriff auf Code Wiki für jedes GitHub-Repository
+- Klares und minimalistisches Design nach GitHub-UI-Mustern
+- Funktioniert auf allen GitHub-Repository-Seiten
+
+🚀 Verwendung:
+1. Installieren Sie die Erweiterung
+2. Navigieren Sie zu einem beliebigen GitHub-Repository
+3. Klicken Sie auf die Schaltfläche "Code Wiki" im Repository-Header
+4. Sie werden zur entsprechenden Code Wiki-Seite weitergeleitet
+
+⚠️ Hinweis:
+Dies ist eine inoffizielle Erweiterung und steht in keiner Verbindung zu GitHub oder Google. Sie bietet lediglich eine bequeme Möglichkeit, zwischen GitHub-Repositories und den entsprechenden Code Wiki-Seiten zu navigieren.
+
+🔒 Datenschutz:
+- Keine Datenerfassung
+- Kein Tracking
+- Keine Authentifizierung erforderlich
+- Benötigt nur Zugriff auf github.com, um die Schaltfläche hinzuzufügen
+
+💻 Der Quellcode ist ebenfalls verfügbar und Sie können ihn selbst bauen und installieren.
+Weitere Informationen finden Sie unter:
+https://github.com/yamadashy/github-code-wiki-button
