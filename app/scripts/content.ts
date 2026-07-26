@@ -6,7 +6,7 @@ function addCodeWikiButton(): void {
   }
 
   // Get repository main navigation element
-  const navActions = document.querySelector<HTMLUListElement>('ul.pagehead-actions');
+  const navActions = document.querySelector<HTMLUListElement>('ul.pagehead-actions, ul[data-testid="repo-header-actions"]');
   if (!navActions) {
     return;
   }
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Monitor navigation element addition (only if button doesn't exist)
-    const navActions = document.querySelector<HTMLUListElement>('ul.pagehead-actions');
+    const navActions = document.querySelector<HTMLUListElement>('ul.pagehead-actions, ul[data-testid="repo-header-actions"]');
     const codeWikiButton = document.querySelector('.codewiki-button');
     if (navActions && !codeWikiButton) {
       addCodeWikiButton();
