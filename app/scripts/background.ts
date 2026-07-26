@@ -9,6 +9,12 @@ const injectContentToTab = async (tab: chrome.tabs.Tab) => {
     return;
   }
 
+  // Skip tabs whose page is not loaded (e.g. restored but never
+  // activated); the declared content script covers them on load
+  if (tab.status === 'unloaded') {
+    return;
+  }
+
   // Under some circumstances a Tab may not be assigned an ID
   if (tab.id === undefined) {
     return;
@@ -18,11 +24,12 @@ const injectContentToTab = async (tab: chrome.tabs.Tab) => {
   const cssFiles = manifest.content_scripts?.[0].css ?? [];
   const jsFiles = manifest.content_scripts?.[0].js ?? [];
 
+  // Top frame only: with allFrames, cross-origin iframes in the page
+  // fail the whole call with a host permission error
   if (cssFiles.length > 0) {
     await chrome.scripting.insertCSS({
       target: {
         tabId: tab.id,
-        allFrames: true,
       },
       files: cssFiles,
     });
@@ -31,22 +38,21 @@ const injectContentToTab = async (tab: chrome.tabs.Tab) => {
     await chrome.scripting.executeScript({
       target: {
         tabId: tab.id,
-        allFrames: true,
       },
       files: jsFiles,
     });
   }
 };
 
-// Update extension content for tabs
-chrome.tabs.query({}, async (tabs) => {
-  for (const tabKey in tabs) {
-    const tab = tabs[tabKey];
-
+// Update extension content for tabs the extension has host permission for
+chrome.tabs.query({ url: 'https://github.com/*' }, async (tabs) => {
+  for (const tab of tabs) {
     try {
-      injectContentToTab(tab);
+      await injectContentToTab(tab);
     } catch (e) {
-      console.error(e);
+      // Failures here are non-fatal: the declared content script
+      // still runs when the page (re)loads
+      console.warn('CodeWiki: skipped applying to tab:', tab.status, tab.url, e);
     }
   }
 });
