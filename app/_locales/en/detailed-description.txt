@@ -13,7 +13,9 @@ This browser extension adds a convenient "Code Wiki" button to GitHub repository
 4. You'll be redirected to the corresponding Code Wiki page
 
 ⚠️ Note:
-This is an unofficial extension and is not affiliated with GitHub or Google. It simply provides a convenient way to navigate between GitHub repositories and their corresponding Code Wiki pages.
+This is an unofficial extension and is not affiliated with, endorsed by, or sponsored by GitHub or Google. It simply provides a convenient way to navigate between GitHub repositories and their corresponding Code Wiki pages.
+
+GitHub is a trademark of GitHub, Inc. Code Wiki is a service of Google LLC. These names are used only to indicate the services this extension works with.
 
 🔒 Privacy:
 - No data collection
